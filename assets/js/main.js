@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         <span>Wir verwenden Fotos nur mit schriftlicher Einwilligung der Eltern. Einstellungen jederzeit änderbar.</span>
         <div class="flex gap-2">
           <button id="consent-ok" class="btn-playful px-4 py-2 tw-bg-primary text-white">OK</button>
-          <a href="/de/legal/privacy.html" class="underline">Datenschutz</a>
+          <a href="${depth}${lang}/legal/privacy.html" class="underline">Datenschutz</a>
         </div>
       </div>`;
     document.body.appendChild(bar);

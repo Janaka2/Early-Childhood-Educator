@@ -1,15 +1,15 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="1;url=/en/index.html">
+  <meta http-equiv="refresh" content="1;url=en/index.html">
   <title>LittleLearners Redirect</title>
   <script>
     document.addEventListener("DOMContentLoaded",function(){
       var lang=(navigator.language||navigator.userLanguage||"en").substring(0,2);
       if(lang==="de"){
-        window.location.replace("/de/index.html");
+        window.location.replace("de/index.html");
       } else {
-        window.location.replace("/en/index.html");
+        window.location.replace("en/index.html");
       }
     });
   </script>
