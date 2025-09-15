@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Early Childhood Educator Portfolio</title>
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-3">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-[#56C5AB] flex items-center">
+                <i data-feather="heart" class="mr-2 text-[#FF9F89]"></i> LittleLearners
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-[#56C5AB] transition">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-[#56C5AB] transition">About</a>
+                <a href="experience.html" class="text-[#56C5AB] font-bold border-b-2 border-[#56C5AB]">Experience</a>
+                <a href="gallery.html" class="text-gray-700 hover:text-[#56C5AB] transition">Gallery</a>
+                <a href="contact.html" class="text-gray-700 hover:text-[#56C5AB] transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-[var(--light)]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-[var(--dark)]" data-aos="fade-up">Professional Experience & Research</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Current Position -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm card" data-aos="fade-up">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-[var(--primary)] bg-opacity-10 p-3 rounded-lg mr-4">
+                            <i data-feather="book-open" class="text-[var(--primary)]"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-[var(--dark)]">Early Childhood Educator</h3>
+                            <p class="text-[var(--primary)] font-medium">KIDSatLAKE AG · Full-time</p>
+                            <p class="text-gray-500">Jan 2025 - Present · Bäch SZ, Switzerland</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Implementing play-based curriculum with 3:1 child-teacher ratio.</span></li>
+                        <li class="flex items-start"><i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Observing and documenting children's progress.</span></li>
+                        <li class="flex items-start"><i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i><span>Communicating with parents on child's growth and milestones.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Previous Positions -->
+                <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white/80 rounded-xl p-6 card"><h3 class="font-bold text-lg">Early Childhood Educator</h3><p class="text-pink-500 font-medium">Private Family · Part-time</p><p class="text-gray-500">Oct 2024 - Dec 2024</p></div>
+                    <div class="bg-white/80 rounded-xl p-6 card"><h3 class="font-bold text-lg">Early Childhood Educator</h3><p class="text-pink-500 font-medium">Private Family · Part-time</p><p class="text-gray-500">Jan 2024 - Jul 2024</p></div>
+                    <div class="bg-white/80 rounded-xl p-6 card"><h3 class="font-bold text-lg">Stay-at-Home Parent</h3><p class="text-pink-500 font-medium">Family Care · Full-time</p><p class="text-gray-500">2010 - 2022</p></div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="mt-16" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Key Skills</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-medium">Kindergarten Education</span>
+                    <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-medium">Early Childhood Development</span>
+                    <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-medium">Child Safety</span>
+                    <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-medium">Multilingual</span>
+                    <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-medium">Activity Planning</span>
+                    <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-medium">Parent Communication</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- Shared Components -->
+<div id="whatsapp-popup" class="fixed bottom-24 right-4 z-50 hidden"><div class="bg-white rounded-lg shadow-xl w-64 overflow-hidden" data-aos="zoom-in" data-aos-delay="200"><div class="bg-[#25D366] text-white p-3"><div class="flex items-center"><span class="font-bold">Chat on WhatsApp</span><button onclick="closeWhatsApp()" class="ml-auto focus:outline-none"><i data-feather="x" class="w-4 h-4"></i></button></div></div><div class="p-4"><p class="text-sm text-gray-600 mb-4">Hello! How can I help you?</p><a href="https://wa.me/1234567890" target="_blank" class="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-4 rounded-full inline-flex items-center w-full justify-center"><i data-feather="message-circle" class="mr-2"></i>Open WhatsApp</a></div></div></div>
+<div class="fab-container" data-aos="fade-up" data-aos-delay="400"><button onclick="openWhatsApp()" class="fab bg-[#25D366] hover:bg-[#128C7E]"><i data-feather="message-circle" class="text-white w-6 h-6"></i></button></div>
+<footer class="bg-white py-8 border-t border-gray-200"><div class="container mx-auto px-6"><div class="flex flex-col md:flex-row justify-between items-center"><div class="mb-4 md:mb-0"><a href="index.html" class="text-2xl font-bold text-pink-400 flex items-center"><i data-feather="heart" class="mr-2"></i> EarlyChild Educator</a><p class="text-gray-500 mt-2">Nurturing the next generation</p></div><div class="flex space-x-6"><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="facebook"></i></a><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="instagram"></i></a><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="twitter"></i></a><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="linkedin"></i></a></div></div><div class="mt-8 text-center text-gray-500 text-sm"><p>© 2024 Early Childhood Educator Portfolio. All rights reserved.</p></div></div></footer>
+
+<!-- Custom Scripts -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Early Childhood Educator Portfolio</title>
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-3">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-[#56C5AB] flex items-center">
+                <i data-feather="heart" class="mr-2 text-[#FF9F89]"></i> LittleLearners
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-[#56C5AB] transition">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-[#56C5AB] transition">About</a>
+                <a href="experience.html" class="text-gray-700 hover:text-[#56C5AB] transition">Experience</a>
+                <a href="gallery.html" class="text-gray-700 hover:text-[#56C5AB] transition">Gallery</a>
+                <a href="contact.html" class="text-[#56C5AB] font-bold border-b-2 border-[#56C5AB]">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="py-24">
+    <section id="connect" class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800" data-aos="fade-up">Let's Connect</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="100">
+            Interested in learning more about my approach to early childhood education? Feel free to reach out!
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a href="mailto:example@email.com" class="playful-btn bg-pink-400 hover:bg-pink-500 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition" data-aos="zoom-in">
+                <i data-feather="mail" class="mr-2"></i>
+                <span>Email Me</span>
+            </a>
+            <a href="#" class="playful-btn bg-white hover:bg-gray-100 text-pink-500 font-bold py-3 px-6 rounded-full inline-flex items-center transition border border-pink-300" data-aos="zoom-in" data-aos-delay="100">
+                <i data-feather="linkedin" class="mr-2"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+
+<!-- Shared Components -->
+<div id="whatsapp-popup" class="fixed bottom-24 right-4 z-50 hidden"><div class="bg-white rounded-lg shadow-xl w-64 overflow-hidden" data-aos="zoom-in" data-aos-delay="200"><div class="bg-[#25D366] text-white p-3"><div class="flex items-center"><span class="font-bold">Chat on WhatsApp</span><button onclick="closeWhatsApp()" class="ml-auto focus:outline-none"><i data-feather="x" class="w-4 h-4"></i></button></div></div><div class="p-4"><p class="text-sm text-gray-600 mb-4">Hello! How can I help you?</p><a href="https://wa.me/1234567890" target="_blank" class="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-4 rounded-full inline-flex items-center w-full justify-center"><i data-feather="message-circle" class="mr-2"></i>Open WhatsApp</a></div></div></div>
+<div class="fab-container" data-aos="fade-up" data-aos-delay="400"><button onclick="openWhatsApp()" class="fab bg-[#25D366] hover:bg-[#128C7E]"><i data-feather="message-circle" class="text-white w-6 h-6"></i></button></div>
+<footer class="bg-white py-8 border-t border-gray-200"><div class="container mx-auto px-6"><div class="flex flex-col md:flex-row justify-between items-center"><div class="mb-4 md:mb-0"><a href="index.html" class="text-2xl font-bold text-pink-400 flex items-center"><i data-feather="heart" class="mr-2"></i> EarlyChild Educator</a><p class="text-gray-500 mt-2">Nurturing the next generation</p></div><div class="flex space-x-6"><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="facebook"></i></a><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="instagram"></i></a><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="twitter"></i></a><a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="linkedin"></i></a></div></div><div class="mt-8 text-center text-gray-500 text-sm"><p>© 2024 Early Childhood Educator Portfolio. All rights reserved.</p></div></div></footer>
+
+<!-- Custom Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
