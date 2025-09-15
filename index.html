@@ -1,141 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Early Childhood Educator Portfolio</title>
-    <!-- External Libraries -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="1;url=/en/index.html">
+  <title>LittleLearners Redirect</title>
+  <script>
+    document.addEventListener("DOMContentLoaded",function(){
+      var lang=(navigator.language||navigator.userLanguage||"en").substring(0,2);
+      if(lang==="de"){
+        window.location.replace("/de/index.html");
+      } else {
+        window.location.replace("/en/index.html");
+      }
+    });
+  </script>
 </head>
-<body class="bg-white text-gray-800">
-
-<!-- Navigation -->
-<nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-6 py-3">
-        <div class="flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-[#56C5AB] flex items-center">
-                <i data-feather="heart" class="mr-2 text-[#FF9F89]"></i> LittleLearners
-            </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-[#56C5AB] font-bold border-b-2 border-[#56C5AB]">Home</a>
-                <a href="about.html" class="text-gray-700 hover:text-[#56C5AB] transition">About</a>
-                <a href="experience.html" class="text-gray-700 hover:text-[#56C5AB] transition">Experience</a>
-                <a href="gallery.html" class="text-gray-700 hover:text-[#56C5AB] transition">Gallery</a>
-                <a href="contact.html" class="text-gray-700 hover:text-[#56C5AB] transition">Contact</a>
-            </div>
-            <button class="md:hidden focus:outline-none" id="mobile-menu-button">
-                <i data-feather="menu"></i>
-            </button>
-        </div>
-    </div>
-</nav>
-
-<!-- Child Development Facts Banner -->
-<div class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white text-center py-2 px-4">
-    <p class="font-medium animate-pulse">Research shows: The first 5 years build lifelong learning potential (Harvard Center on Developing Child)</p>
-</div>
-
-<!-- Main Content -->
-<main>
-    <!-- Hero Section -->
-    <section class="hero-pattern py-24">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">Nurturing Little Minds (0-6 Years)</h1>
-                <p class="text-2xl text-gray-700 mb-8">Play-based learning for early brain development</p>
-                <div class="space-y-4">
-                    <div class="flex items-center">
-                        <i data-feather="check" class="text-[#56C5AB] mr-2"></i>
-                        <span class="text-lg">Certified Early Childhood Specialist</span>
-                    </div>
-                    <div class="flex items-center">
-                        <i data-feather="check" class="text-[#56C5AB] mr-2"></i>
-                        <span class="text-lg">Brain Development Focus (0-6 yrs)</span>
-                    </div>
-                    <div class="flex items-center">
-                        <i data-feather="check" class="text-[#56C5AB] mr-2"></i>
-                        <span class="text-lg">Multilingual Environment</span>
-                    </div>
-                </div>
-                <a href="contact.html" class="playful-btn bg-[#56C5AB] hover:bg-[#3DA58A] text-white font-bold py-4 px-8 rounded-lg inline-flex items-center mt-6 transition">
-                    <i data-feather="message-circle" class="mr-2"></i>
-                    <span>Connect With Me</span>
-                </a>
-            </div>
-            <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
-                <div class="relative">
-                    <div class="w-80 h-80 rounded-2xl overflow-hidden border-8 border-white shadow-2xl transform rotate-2">
-                        <img src="https://placehold.co/640x360/56c5ab/white?text=Playful+Learning" alt="Teaching toddlers" class="w-full h-full object-cover">
-                    </div>
-                    <div class="absolute -bottom-4 -left-4 bg-[#FFD166] p-3 rounded-xl shadow-lg">
-                        <span class="text-white font-bold">Play = Learning</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- Shared Components (WhatsApp, Footer, etc.) -->
-
-<!-- WhatsApp Popup -->
-<div id="whatsapp-popup" class="fixed bottom-24 right-4 z-50 hidden">
-    <div class="bg-white rounded-lg shadow-xl w-64 overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
-        <div class="bg-[#25D366] text-white p-3">
-            <div class="flex items-center">
-                <span class="font-bold">Chat on WhatsApp</span>
-                <button onclick="closeWhatsApp()" class="ml-auto focus:outline-none">
-                    <i data-feather="x" class="w-4 h-4"></i>
-                </button>
-            </div>
-        </div>
-        <div class="p-4">
-            <p class="text-sm text-gray-600 mb-4">Hello! How can I help you with your child's early learning needs?</p>
-            <a href="https://wa.me/1234567890" target="_blank" class="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-4 rounded-full inline-flex items-center w-full justify-center">
-                <i data-feather="message-circle" class="mr-2"></i>
-                Open WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- Floating WhatsApp Button -->
-<div class="fab-container" data-aos="fade-up" data-aos-delay="400">
-    <button onclick="openWhatsApp()" class="fab bg-[#25D366] hover:bg-[#128C7E]">
-        <i data-feather="message-circle" class="text-white w-6 h-6"></i>
-    </button>
-</div>
-
-<!-- Footer -->
-<footer class="bg-white py-8 border-t border-gray-200">
-    <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <a href="index.html" class="text-2xl font-bold text-pink-400 flex items-center">
-                    <i data-feather="heart" class="mr-2"></i> EarlyChild Educator
-                </a>
-                <p class="text-gray-500 mt-2">Nurturing the next generation with care and expertise</p>
-            </div>
-            <div class="flex space-x-6">
-                <a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="facebook"></i></a>
-                <a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="instagram"></i></a>
-                <a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="twitter"></i></a>
-                <a href="#" class="text-gray-500 hover:text-pink-400 transition"><i data-feather="linkedin"></i></a>
-            </div>
-        </div>
-        <div class="mt-8 text-center text-gray-500 text-sm">
-            <p>© 2024 Early Childhood Educator Portfolio. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-<!-- Custom Scripts -->
-<script src="script.js"></script>
-</body>
-</html>
+<body>
+  <p>Redirecting to your language version...</p>
+</body></html>

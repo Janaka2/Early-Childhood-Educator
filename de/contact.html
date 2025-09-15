@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | LittleLearners</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body class="tw-text-ink">
+  <div id="site-header"></div>
+  
+<main class="container mx-auto px-6 py-12">
+  <h1 class="kids-heading text-4xl mb-6">Kontakt</h1>
+  <p class="mb-6">Fragen oder einen Besuch vereinbaren? Wir freuen uns auf Ihre Nachricht.</p>
+  <div class="grid md:grid-cols-2 gap-8">
+    <form class="bg-white p-6 rounded-xl shadow-sm" onsubmit="event.preventDefault(); alert('Danke! Wir melden uns.');">
+      <label class="block mb-2">Ihr Name<input class="w-full border rounded px-3 py-2" required></label>
+      <label class="block mb-2">E-Mail<input type="email" class="w-full border rounded px-3 py-2" required></label>
+      <label class="block mb-4">Nachricht<textarea class="w-full border rounded px-3 py-2" rows="4" required></textarea></label>
+      <button class="btn-playful tw-bg-primary text-white px-6 py-3">Senden</button>
+    </form>
+    <div>
+      <a class="btn-playful inline-flex items-center px-6 py-3 tw-bg-primary text-white" href="https://wa.me/1234567890">
+        <i data-feather="message-circle" class="mr-2"></i> WhatsApp Chat
+      </a>
+      <p class="mt-4 text-sm text-gray-600">Mit Ihrer Kontaktaufnahme stimmen Sie unserer <a class="underline" href="/de/legal/privacy.html">Datenschutzerklärung</a> zu.</p>
+    </div>
+  </div>
+</main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/js/includes.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body></html>
